@@ -1,0 +1,13 @@
+public class CountWordsInString {
+
+    public static void main(String[] args) {
+        String s = "qwer test string example";
+        
+        // Trim leading/trailing spaces and split by one or more spaces
+        String[] words = s.trim().split("\\s+");
+        
+        int count = words.length;
+        
+        System.out.println("The total number of words in the given string are: " + count);
+    }
+}
