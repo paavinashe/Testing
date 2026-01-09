@@ -1,0 +1,28 @@
+public class ToFindDuplicateWordsInaString {
+
+	public static void main(String[] args) {
+		
+		String str = "This is test string and this string contains duplicate words";
+		
+		//Convert to lower case
+		str = str.toLowerCase();
+		
+		//Split the words
+		String [] words = str.split(" ");
+		System.out.println("Duplicate words in the string");
+		
+		//Compare each word
+		for(int i = 0;i < words.length;i++) 
+		{
+			for(int j = i + 1;j<words.length;j++) 
+			{
+				if(words[i].equals(words[j]))
+				{
+					System.out.println(words[i]);
+				}	
+			}
+		}
+
+	}
+
+}
