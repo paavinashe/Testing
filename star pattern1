@@ -1,0 +1,23 @@
+//star patterns programs using while
+class Main {
+    public static void main(String[] args) {
+    int line = 1;
+    while(line <= 4)
+    {
+    int ast = 4;
+    while(ast >= line)
+    {
+        System.out.print("*");
+        ast --;
+    }
+    System.out.println();
+    line ++;
+    int space = 1;
+    while(space < line)
+    {
+       System.out.print(" ");
+       space ++;
+    }
+    }
+}
+}
